@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import './reset.css'
 import Practice from './pages/Practice';
 import Home from "./pages/Home";
 import Learn from './pages/Learn';

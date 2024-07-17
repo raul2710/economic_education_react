@@ -1,96 +1,125 @@
-import React, { useState } from 'react';
-import './calculadora.css';
+document
+  .getElementById("metaForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-function App() {
-  const [valorMeta, setValorMeta] = useState('');
-  const [valorInicial, setValorInicial] = useState('');
-  const [frequencia, setFrequencia] = useState('semanal');
-  const [duracao, setDuracao] = useState('');
-  const [contribuicao, setContribuicao] = useState(null);
-  const [valorAtingido, setValorAtingido] = useState(null);
-  const [mensagem, setMensagem] = useState('');
+    const valorMeta = parseFloat(
+      document
+        .getElementById("valorMeta")
+        .value.replace(/\./g, "")
+        .replace(",", ".")
+    );
+    const valorInicial = parseFloat(
+      document
+        .getElementById("valorInicial")
+        .value.replace(/\./g, "")
+        .replace(",", ".")
+    );
+    const frequencia = document.getElementById("frequencia").value;
+    const duracao = parseFloat(document.getElementById("duracao").value);
 
-  const calcularContribuicaoPeriodica = (valorMeta, valorInicial, frequencia, duracao) => {
     const frequencias = {
       semanal: 52,
+      quinzenal: 26,
       mensal: 12,
-      anual: 1
+      anual: 1,
     };
-    
+
+    const periodosFrequencias = {
+      semanal: ["semana", "semanais"],
+      quinzenal: ["quinzena", "quinzenais"],
+      mensal: ["mês", "mensais"],
+      anual: ["ano", "anuais"],
+    };
+
     const periodoContribuicoes = frequencias[frequencia];
     const numeroContribuicoes = duracao * periodoContribuicoes;
-    const contribuicaoPeriodica = (valorMeta - valorInicial) / numeroContribuicoes;
-    
-    return contribuicaoPeriodica;
-  };
+    const contribuicaoPeriodica =
+      (valorMeta - valorInicial) / numeroContribuicoes;
 
-  const calcularMetaFinanceira = (valorInicial, contribuicao, frequencia, duracao) => {
-    const frequencias = {
-      semanal: 52,
-      mensal: 12,
-      anual: 1
+    const calcularMetaFinanceira = (
+      valorInicial,
+      contribuicao,
+      frequencia,
+      duracao
+    ) => {
+      const periodoContribuicoes = frequencias[frequencia];
+      const numeroContribuicoes = Math.floor(duracao * periodoContribuicoes);
+      let valorTotal = valorInicial;
+
+      for (let i = 0; i < numeroContribuicoes; i++) {
+        valorTotal += contribuicao;
+      }
+
+      return valorTotal;
     };
-    
-    const periodoContribuicoes = frequencias[frequencia];
-    const numeroContribuicoes = duracao * periodoContribuicoes;
-    let valorTotal = valorInicial;
-    
-    for (let i = 0; i < numeroContribuicoes; i++) {
-      valorTotal += contribuicao;
-    }
-    
-    return valorTotal;
-  };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const contrib = calcularContribuicaoPeriodica(parseFloat(valorMeta), parseFloat(valorInicial), frequencia, parseFloat(duracao));
-    setContribuicao(contrib.toFixed(2));
-    const valorFinal = calcularMetaFinanceira(parseFloat(valorInicial), contrib, frequencia, parseFloat(duracao));
-    setValorAtingido(valorFinal.toFixed(2));
+    const valorAtingido = calcularMetaFinanceira(
+      valorInicial,
+      contribuicaoPeriodica,
+      frequencia,
+      duracao
+    );
 
-    if (valorFinal >= parseFloat(valorMeta)) {
-      setMensagem('Parabéns! Você atingiu sua meta financeira!');
+    const obterMensagemDuracao = (duracao) => {
+      if (duracao <= 1) {
+        return "Cada pequeno esforço diário te aproxima do seu objetivo!";
+      } else if (duracao <= 3) {
+        return "A constância é a chave para alcançar grandes sonhos!";
+      } else {
+        return "Grandes objetivos requerem tempo, e cada esforço será recompensado!";
+      }
+    };
+
+    const pluralOuSingular = (valor, singular, plural) => {
+      return valor === 1 ? singular : plural;
+    };
+
+    const duracaoTexto = pluralOuSingular(duracao, "ano", "anos");
+    const contribuicaoTexto = pluralOuSingular(
+      numeroContribuicoes,
+      periodosFrequencias[frequencia][0],
+      periodosFrequencias[frequencia][1]
+    );
+    const frequenciaTexto = periodosFrequencias[frequencia][0];
+    const mensagemDuracao = obterMensagemDuracao(duracao);
+
+    let mensagemFinal;
+    if (valorAtingido >= valorMeta) {
+      mensagemFinal = "Parabéns! Você atingiu sua meta financeira!";
     } else {
-      setMensagem('Você não atingiu sua meta financeira. Considere ajustar suas contribuições ou a duração para alcançar seu objetivo.');
+      mensagemFinal =
+        "Você está muito perto de sua meta financeira! Com alguns ajustes nas contribuições ou na duração, você pode alcançar o valor exato desejado.";
     }
-  };
 
-  return (
-    <div className="App">
-      <h1>Calculadora de Metas Financeiras</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Valor Total da Meta:</label>
-          <input type="number" value={valorMeta} onChange={(e) => setValorMeta(e.target.value)} required />
-        </div>
-        <div>
-          <label>Valor Inicial:</label>
-          <input type="number" value={valorInicial} onChange={(e) => setValorInicial(e.target.value)} required />
-        </div>
-        <div>
-          <label>Frequência das Contribuições:</label>
-          <select value={frequencia} onChange={(e) => setFrequencia(e.target.value)}>
-            <option value="semanal">Semanal</option>
-            <option value="mensal">Mensal</option>
-            <option value="anual">Anual</option>
-          </select>
-        </div>
-        <div>
-          <label>Duração (em anos):</label>
-          <input type="number" value={duracao} onChange={(e) => setDuracao(e.target.value)} required />
-        </div>
-        <button type="submit">Calcular</button>
-      </form>
-      {contribuicao !== null && (
-        <div>
-          <p>Para atingir a meta de R$ {valorMeta} em {duracao} anos com contribuições {frequencia}, você precisará contribuir aproximadamente R$ {contribuicao} por período.</p>
-          <p>Valor total poupado ao final do período: R$ {valorAtingido}</p>
-          <p>{mensagem}</p>
-        </div>
-      )}
-    </div>
-  );
-}
+    const formatadorNumerico = new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    });
 
-export default App;
+    document.getElementById("resultados").innerHTML = `
+        <p>Para atingir a meta de ${formatadorNumerico.format(
+          valorMeta
+        )} em ${duracao} ${duracaoTexto} com contribuições ${contribuicaoTexto}, você precisará contribuir aproximadamente ${formatadorNumerico.format(
+      contribuicaoPeriodica
+    )} por ${frequenciaTexto}.</p>
+        <p>${mensagemDuracao}</p>
+        <p>${mensagemFinal}</p>
+    `;
+  });
+
+const formatarParaDecimal = (input) => {
+  input.addEventListener("input", function (event) {
+    let valor = event.target.value.replace(/\D/g, "");
+    valor = (parseFloat(valor) / 100)
+      .toFixed(2)
+      .replace(".", ",")
+      .replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    event.target.value = valor;
+  });
+};
+
+document.querySelectorAll('input[type="text"]').forEach(function (input) {
+  formatarParaDecimal(input);
+});
+
