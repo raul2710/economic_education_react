@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
-import MenuOptions from "./Header-Components/menuOptions";
+import MenuOptions from "./menuOptions";
 import Carrousel from "./Header-Components/carrousel";
 
 
 const Head = styled.header`
-    width: 100vw;
+    width: 99vw;
     height: 90vh;
     display: grid;
-    grid-template: 1fr 5fr / 1fr;
+    background-color: black;
+    grid-template: 12% 1fr / 1fr;
+    justify-items: center;
 `
 
 export default function Header(){

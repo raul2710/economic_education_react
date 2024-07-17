@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
+import { Container } from "../utilitary-components/container";
+
 
 // images
-import Lupa from "../../../img/magnifyingGlass.png"
+import Lupa from "../../img/magnifyingGlass.png"
 
-const Container = styled.div`
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 20px;
-    width: 30vw;
-`
 
 const Bar = styled.input`
     width: 90%;
@@ -18,14 +14,14 @@ const Bar = styled.input`
 const SearchButton = styled.button`
     background-image: url(${ Lupa });
     background-size: cover;
-    width: 5%;
+    width: 10%;
+    height: 20px;
 `
 
 export default function SearchBar(){
     return(
         <Container>
             <Bar>
-
             </Bar>
             <SearchButton/>
         </Container>

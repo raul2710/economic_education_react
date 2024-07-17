@@ -1,14 +1,14 @@
-.App {
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 100px;
-}
 
 .swiperSlide{
-  width: max-content;
+  width: 100%;
+}
+
+.slide-item{
+  width: 100%;
+}
+
+.Swiper{
+  width: 100%;
 }
 
 .App-logo {
