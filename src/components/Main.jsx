@@ -9,15 +9,20 @@ import Slide1 from "../img/investment1.jpeg"
 import Slide2 from "../img/investment2.jpg"
 import Slide3 from "../img/investment3.jpg"
 
-const Image = styled.div`
-    height: 85vh;
+const ImageContainer = styled.div`
+    height: 75vh;
     width: 100%;
+    position: relative;
     background-image: linear-gradient(to right, #000000 0%, #000000 25%, #00000000 90%);
 `
 const TextSlides = styled.div`
-    height: 100px;
-    width: 100%;
-    color: blue;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
 `
 
 export default function Main(){
@@ -30,20 +35,24 @@ export default function Main(){
                 onSwiper={(swiper) => console.log(swiper)}
             >
             <SwiperSlide>
-                <Image>
+                <ImageContainer>
                     <img src={Slide1} alt="" className='carouselImg'/>
                     <TextSlides> Testando </TextSlides>
-                </Image>
+                </ImageContainer>
             </SwiperSlide>
             <SwiperSlide>
-                <Image>
+                <ImageContainer>
                     <img src={Slide2} alt="" className='carouselImg'/>
-                </Image>
+                    <TextSlides> Testando </TextSlides>
+                </ImageContainer>
             </SwiperSlide>
             <SwiperSlide>
-                <Image>
+                <ImageContainer>
                     <img src={Slide3} alt="" className='carouselImg'/>
-                </Image>
+                </ImageContainer>
+                <TextSlides> 
+                    Inteligencia financeira & ferramentas para uma boa gestão    
+                </TextSlides>
             </SwiperSlide>
           
             </Swiper>

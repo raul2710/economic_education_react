@@ -21,13 +21,15 @@ const P = styled.p`
 `
 
 const Section = styled.section`
+    // background-image: url()
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
     height: 90vh;
 `
 
 export default function MainPractice() {
-    
+
     const [current, setCurrent] = React.useState(1)
     React.useEffect(() => {
       if (current === 5) setCurrent(1)
@@ -43,6 +45,11 @@ export default function MainPractice() {
                     Aqui você poderá treinar tudo que aprendeu nas aulas anteriores
                 </P>
             </div>
+            <Button sx={{ mt: 1, mr: 1}} variant="outlined" onClick={() => {
+                setCurrent(cur=>cur+1)
+            }}> 
+                Começar 
+            </Button>
         </Section>
         <Div id="slide-1">
 
