@@ -4,8 +4,8 @@ import styled from "styled-components";
 const Options = styled.a`
     list-style: none;
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
+    color: ${props => props.color};
+    border: 1px solid ${props => props.color};
     border-radius: 20px;
     padding: 2px 10px;
     &:hover{
@@ -15,6 +15,6 @@ const Options = styled.a`
 `
 export default function Link({link}) {
     return(
-        <Options href={link.url}>{link.name}</Options>
+        <Options href={link.url} color={link.color}>{link.name}</Options>
     );
 }
