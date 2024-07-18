@@ -49,7 +49,7 @@ export default function Questions(props) {
           <FormControlLabel value={props.value4} control={<Radio />} label={props.label4}  />
         </RadioGroup>
         <FormHelperText>{helperText}</FormHelperText>
-        <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined">
+        <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined" >
           Corrigir
         </Button>
       </FormControl>
