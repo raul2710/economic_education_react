@@ -44,9 +44,9 @@ export default function Questions(props) {
           onChange={handleRadioChange}
         >
           <FormControlLabel value={props.value1} control={<Radio />} label={props.label1} />
-          <FormControlLabel value={props.value2} control={<Radio />} label={props.label2}  />
-          <FormControlLabel value={props.value3} control={<Radio />} label={props.label3}  />
-          <FormControlLabel value={props.value4} control={<Radio />} label={props.label4}  />
+          <FormControlLabel value={props.value2} control={<Radio />} label={props.label2} />
+          <FormControlLabel value={props.value3} control={<Radio />} label={props.label3} />
+          <FormControlLabel value={props.value4} control={<Radio />} label={props.label4} />
         </RadioGroup>
         <FormHelperText>{helperText}</FormHelperText>
         <Button sx={{ mt: 1, mr: 1 }} type="submit" variant="outlined" >

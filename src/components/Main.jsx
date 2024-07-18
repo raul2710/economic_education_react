@@ -15,6 +15,7 @@ const ImageContainer = styled.div`
     position: relative;
     background-image: linear-gradient(to right, #000000 0%, #000000 25%, #00000000 90%);
 `
+
 const TextSlides = styled.div`
     position: absolute;
     top: 50%;
