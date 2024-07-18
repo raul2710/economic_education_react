@@ -6,10 +6,10 @@ import LearnSection from "../components/learnSection/LearnSection"
 
 export default function Learn(){
     return(
-        <div>
+        <body>
             <Header/>
             <LearnSection/>
             <Footer/>
-        </div>
+        </body>
     )
 }

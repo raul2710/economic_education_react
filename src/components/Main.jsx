@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import 'swiper/css';
 import './MainCarousel.css'
 
+import WelcomeSection from './WelcomeSection/WelcomeSection';
+
 import Slide1 from "../img/investment1.jpeg"
 import Slide2 from "../img/investment2.jpg"
 import Slide3 from "../img/investment3.jpg"
@@ -45,6 +47,8 @@ export default function Main(){
             </SwiperSlide>
           
             </Swiper>
+
+            <WelcomeSection />
         </main>
     )
 }
