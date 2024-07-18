@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 
@@ -37,6 +37,9 @@ export default function Layout(){
                 </Li>
                 <Li>
                     <StyledLink to="/practice">Praticar</StyledLink>
+                </Li>
+                <Li>
+                    <StyledLink to="/planning">planejamento</StyledLink>
                 </Li>
             </Ul>
         </Nav>

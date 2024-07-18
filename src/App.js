@@ -5,6 +5,7 @@ import './App.css';
 import Practice from './pages/Practice';
 import Home from "./pages/Home";
 import Learn from './pages/Learn';
+import Planning from './pages/Planning';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
               <Route path='/' element={<Home/>}/>
               <Route path='/learn' element={<Learn/>} />
               <Route path='/practice' element={<Practice />} />
+              <Route path='/planning' element={<Planning />} />
         </Routes> 
       </BrowserRouter>
     </div>

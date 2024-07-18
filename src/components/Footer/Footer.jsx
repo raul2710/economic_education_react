@@ -18,17 +18,6 @@ const FooterContainer = styled.section`
     gap: 30px;
 `
 
-const DividingLine = styled.hr`
-    color: white;
-    height: 1px;
-`
-
-const DividingLines = styled.div`
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 5px;
-`
-
 
 export default function Footer() {
     return( 
@@ -37,10 +26,6 @@ export default function Footer() {
                 <LogoFooter/>
                 <ListLinks/>
             </FooterContainer>
-            <DividingLines>
-                <DividingLine/>
-                <DividingLine width />
-            </DividingLines>
         </footer>
     );
 }
