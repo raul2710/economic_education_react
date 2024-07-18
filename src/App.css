@@ -32,3 +32,23 @@ a{
   gap: 30px;
 }
 
+.WelcomeSection{
+  margin: 50px 0;
+  h1{
+    font-size: 52px;
+    text-align: center;
+    color: #003609;
+    margin-bottom: 30px;
+  }
+}
+
+.LearnSection{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  .introducao{
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
