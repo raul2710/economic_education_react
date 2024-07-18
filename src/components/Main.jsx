@@ -38,14 +38,14 @@ export default function Main(){
             <SwiperSlide>
                 <ImageContainer>
                     <img src={Slide1} alt="" className='carouselImg'/>
-                    <TextSlides> Testando </TextSlides>
                 </ImageContainer>
+                <TextSlides>Seu futuro financeiro começa aqui, sem custos.</TextSlides>
             </SwiperSlide>
             <SwiperSlide>
                 <ImageContainer>
                     <img src={Slide2} alt="" className='carouselImg'/>
-                    <TextSlides> Testando </TextSlides>
                 </ImageContainer>
+                <TextSlides>Transformando vidas com educação financeira gratuita.</TextSlides>
             </SwiperSlide>
             <SwiperSlide>
                 <ImageContainer>

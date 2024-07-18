@@ -35,17 +35,17 @@ const Imagem = styled.img`
 export default function Tools(){
     return(
         <ToolsContainer className="tools">
-            <h1>ferramentas uteis</h1>
+            <h1>Ferramentas Úteis</h1>
             <CalculatorContainer>
                 <div>
-                <h2>calculadora fianceira</h2>
+                <h2>Calculadora Financeira</h2>
                 <p>ferramenta util para calcular metas de investimento que planeja fazer</p>
                 </div>
                 <CalculatorContainer display>
                 <Imagem src={CalculatorImage} alt="imagem calculadora"/>
                 <Link link={{
                     url: "https://calculator-money-master.vercel.app/",
-                    name: "calculadora",
+                    name: "Teste Já!",
                     color: "black"
                 }} />
                 </CalculatorContainer>
