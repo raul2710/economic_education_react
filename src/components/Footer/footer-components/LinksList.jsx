@@ -35,7 +35,7 @@ export default function ListLinks(props){
     return(
         <Ul>
             <ol>
-                <h3>developers</h3>
+                <h3>Developers</h3>
                 <FooterContainer>
                     <ExternalLinks link={{
                         url: "https://www.linkedin.com/in/bruno-adriano-275bb32b8/",
@@ -55,19 +55,19 @@ export default function ListLinks(props){
                 </FooterContainer>
             </ol>
             <ol>
-                <h3>Sobre nos</h3>
+                <h3>Sobre Nós</h3>
                 <p>Somos alunos do programa tecjovem<br/>e como projeto final do curso<br />nos foi proposto a criacao deste site</p>
             </ol>
             <ol>
-                <h3>Raul tavares</h3>
+                <h3>Raul Tavares</h3>
                 <p>estudante back-end <br /> C | C++ | Java</p>
             </ol>
             <ol>
-                <h3>Bruno adriano</h3>
+                <h3>Bruno Adriano</h3>
                 <p>estudante back-end <br /> Python | Javascript | Java</p>
             </ol>
             <ol>
-                <h3>Ulisses luz</h3>
+                <h3>Ulisses Luz</h3>
                 <p>estudante front-end <br /> javascript | python</p>
             </ol>
         </Ul>

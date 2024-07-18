@@ -56,41 +56,41 @@ export default function LearnModule(props){
             </ModuleSection>
             <ModuleSection>
                 <ModuleDiv>
-                    <h2>pontuação de crédito</h2>
-                    <p>é como sua reputação. Uma boa reputação abre portas para <strong>melhores oportunidades</strong>. Ter uma pontuação de crédito alta facilita a obtenção de empréstimos e garante melhores taxas de juros. Mantenha um bom histórico de pagamentos e preserve sua "reputação" financeira.
+                    <h2>Pontuação de Crédito</h2>
+                    <p>É como sua reputação. Uma boa reputação abre portas para <strong>melhores oportunidades</strong>. Ter uma pontuação de crédito alta facilita a obtenção de empréstimos e garante melhores taxas de juros. Mantenha um bom histórico de pagamentos e preserve sua "reputação" financeira.
                     </p>
                 </ModuleDiv>
                 <ModuleDiv>
-                    <h2>aposentadoria</h2>
-                    <p>é como construir uma fortaleza. Você quer uma estrutura sólida e segura <strong>para viver confortavelmente no futuro</strong>. Comece a economizar cedo para garantir uma aposentadoria tranquila e financeiramente estável. Fortaleça sua "fortaleza" financeira <strong>com contribuições regulares e investimentos sólidos</strong>.</p>
+                    <h2>Aposentadoria</h2>
+                    <p>É como construir uma fortaleza. Você quer uma estrutura sólida e segura <strong>para viver confortavelmente no futuro</strong>. Comece a economizar cedo para garantir uma aposentadoria tranquila e financeiramente estável. Fortaleça sua "fortaleza" financeira <strong>com contribuições regulares e investimentos sólidos</strong>.</p>
                 </ModuleDiv>
                 <ModuleDiv>
                     <h2>Seguros</h2>
-                    <p>são como um guarda-chuva. Eles protegem você das <strong>tempestades financeiras inesperadas</strong>. Ter seguros adequados para saúde, vida, carro e casa é essencial para proteger contra perdas significativas e imprevistos. Certifique-se de estar sempre preparado para qualquer eventualidade.</p>
+                    <p>São como um guarda-chuva. Eles protegem você das <strong>tempestades financeiras inesperadas</strong>. Ter seguros adequados para saúde, vida, carro e casa é essencial para proteger contra perdas significativas e imprevistos. Certifique-se de estar sempre preparado para qualquer eventualidade.</p>
                 </ModuleDiv>
                 <ModuleDiv>
                     <h2>Planejar</h2>
-                    <p> é como traçar um roteiro. Um bom planejamento financeiro leva você do ponto A ao ponto B de maneira eficiente. Ajuda a <strong>alcançar seus objetivos</strong> financeiros de forma organizada e estruturada. Revise e ajuste seu "roteiro" regularmente para se manter no caminho certo e evitar desvios.</p>
+                    <p>É como traçar um roteiro. Um bom planejamento financeiro leva você do ponto A ao ponto B de maneira eficiente. Ajuda a <strong>alcançar seus objetivos</strong> financeiros de forma organizada e estruturada. Revise e ajuste seu "roteiro" regularmente para se manter no caminho certo e evitar desvios.</p>
                 </ModuleDiv>
             </ModuleSection>
             <ModuleSection>
                 <ModuleDiv>
-                    <h2>Renda passiva</h2>
-                    <p>é como um rio que flui constantemente. Ela traz dinheiro para você <strong>sem muito esforço contínuo</strong>, contribuindo para sua independência financeira. Invista em ativos que geram renda passiva, como imóveis e dividendos de ações, e aproveite o <strong>fluxo constante de dinheiro</strong>.</p>
+                    <h2>Renda Passiva</h2>
+                    <p>É como um rio que flui constantemente. Ela traz dinheiro para você <strong>sem muito esforço contínuo</strong>, contribuindo para sua independência financeira. Invista em ativos que geram renda passiva, como imóveis e dividendos de ações, e aproveite o <strong>fluxo constante de dinheiro</strong>.</p>
                 </ModuleDiv>
                 <ModuleDiv>
                     <h2>Inflação</h2>
-                    <p>é como um ladrão silencioso. Ela reduz o valor do seu dinheiro ao longo do tempo, <strong>afetando seu poder de compra</strong>. Invista em ativos que superem a inflação para proteger seu patrimônio e garantir que seu dinheiro mantenha seu valor.
+                    <p>É como um ladrão silencioso. Ela reduz o valor do seu dinheiro ao longo do tempo, <strong>afetando seu poder de compra</strong>. Invista em ativos que superem a inflação para proteger seu patrimônio e garantir que seu dinheiro mantenha seu valor.
                     </p>
                 </ModuleDiv>
                 <ModuleDiv>
                     <h2>Diversificar</h2>
-                    <p>é como misturar ingredientes em uma receita. Quanto mais variados os ingredientes, <strong>mais equilibrado e saboroso será o resultado</strong>. Distribua seus investimentos em diferentes áreas para minimizar perdas e maximizar ganhos, garantindo um portfólio financeiro saudável.
+                    <p>É como misturar ingredientes em uma receita. Quanto mais variados os ingredientes, <strong>mais equilibrado e saboroso será o resultado</strong>. Distribua seus investimentos em diferentes áreas para minimizar perdas e maximizar ganhos, garantindo um portfólio financeiro saudável.
                     </p>
                 </ModuleDiv>
                 <ModuleDiv>
-                    <h2>Taxas e impostos</h2>
-                    <p>são como pedágios em uma estrada. Inevitáveis, mas planejar pode reduzir o custo. Entender as implicações fiscais de diferentes tipos de renda e investimentos é crucial para otimizar seus retornos líquidos e <strong>garantir que você esteja sempre na melhor rota financeira</strong>.</p>
+                    <h2>Taxas e Impostos</h2>
+                    <p>São como pedágios em uma estrada. Inevitáveis, mas planejar pode reduzir o custo. Entender as implicações fiscais de diferentes tipos de renda e investimentos é crucial para otimizar seus retornos líquidos e <strong>garantir que você esteja sempre na melhor rota financeira</strong>.</p>
                 </ModuleDiv>
             </ModuleSection>
         </ModuleSection>

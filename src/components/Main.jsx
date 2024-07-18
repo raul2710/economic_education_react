@@ -23,6 +23,9 @@ const TextSlides = styled.div`
     color: white;
     font-size: 2em;
     font-weight: bold;
+    p{
+        text-shadow: black 3px 3px 3px;
+    }
 `
 
 export default function Main(){
@@ -38,20 +41,20 @@ export default function Main(){
                 <ImageContainer>
                     <img src={Slide1} alt="" className='carouselImg'/>
                 </ImageContainer>
-                <TextSlides>Seu futuro financeiro começa aqui, sem custos.</TextSlides>
+                <TextSlides><p>Seu futuro financeiro começa aqui, sem custos.</p></TextSlides>
             </SwiperSlide>
             <SwiperSlide>
                 <ImageContainer>
                     <img src={Slide2} alt="" className='carouselImg'/>
                 </ImageContainer>
-                <TextSlides>Transformando vidas com educação financeira gratuita.</TextSlides>
+                <TextSlides><p>Transformando vidas com educação financeira gratuita.</p></TextSlides>
             </SwiperSlide>
             <SwiperSlide>
                 <ImageContainer>
                     <img src={Slide3} alt="" className='carouselImg'/>
                 </ImageContainer>
                 <TextSlides> 
-                    Inteligencia financeira & ferramentas para uma boa gestão    
+                <p>Inteligencia financeira & ferramentas para uma boa gestão</p>    
                 </TextSlides>
             </SwiperSlide>
           
