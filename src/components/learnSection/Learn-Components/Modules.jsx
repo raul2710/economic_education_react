@@ -15,6 +15,7 @@ const ModuleDiv = styled.div`
         width: 190px;
         padding: 20px 70px;
     }
+
 `
 
 const ModuleSection = styled.section`
@@ -24,6 +25,11 @@ const ModuleSection = styled.section`
     justify-content: space-evenly;
     gap: 20px;
 `
+
+
+
+
+
 
 
 
