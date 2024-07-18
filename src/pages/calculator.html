@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyMaster Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>MoneyMaster Calculator</h1>
+    <form id="metaForm">
+        <label for="valorMeta">Qual valor é o seu objetivo?</label>
+        <input type="text" id="valorMeta" name="valorMeta" required>
+
+        <label for="valorInicial">Valor Inicial:</label>
+        <input type="text" id="valorInicial" name="valorInicial" required>
+
+        <label for="frequencia">Frequência das Contribuições:</label>
+        <select id="frequencia" name="frequencia" required>
+            <option value="semanal">Semanal</option>
+            <option value="quinzenal">Quinzenal</option>
+            <option value="mensal">Mensal</option>
+            <option value="anual">Anual</option>
+        </select>
+
+        <label for="duracao">Para atingir em quantos anos?</label>
+        <input type="number" id="duracao" name="duracao" required>
+
+       <button type="submit" class="btnCalcular">Calcular</button>
+    </form>
+
+    <div id="resultados" ></div>
+
+    <script src="Calculator.js"></script>
+</body>
+</html>

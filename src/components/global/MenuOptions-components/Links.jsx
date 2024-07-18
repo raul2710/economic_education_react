@@ -39,7 +39,7 @@ export default function Layout(){
                     <StyledLink to="/practice">Praticar</StyledLink>
                 </Li>
                 <Li>
-                    <StyledLink to="/planning">planejamento</StyledLink>
+                    <StyledLink to="/planning">Planejamento</StyledLink>
                 </Li>
             </Ul>
         </Nav>

@@ -39,15 +39,18 @@ export default function ListLinks(props){
                 <FooterContainer>
                     <ExternalLinks link={{
                         url: "https://www.linkedin.com/in/bruno-adriano-275bb32b8/",
-                        name: "Bruno adriano"
+                        name: "Bruno adriano",
+                        color: "white"
                     }}></ExternalLinks>
                     <ExternalLinks link={{
                         url: "linkedin.com/in/ulisses-luz",
-                        name: "ulisses luz"
+                        name: "ulisses luz",
+                        color: "white"
                     }}></ExternalLinks>
                     <ExternalLinks link={{
                         url: "https://www.linkedin.com/in/raul-tavares/",
-                        name: "raul tavares"
+                        name: "raul tavares",
+                        color: "white"
                     }}></ExternalLinks>
                 </FooterContainer>
             </ol>
