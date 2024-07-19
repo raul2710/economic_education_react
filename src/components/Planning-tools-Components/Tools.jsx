@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Link from "../global/ExternalLinks"
 
 // images
-import CalculatorImage from "../../img/calculadora (2).png";
+import CalculatorImage from "../../img/calculadora.png";
 
 const ToolsContainer = styled.div`
     display: flex;
