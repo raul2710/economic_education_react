@@ -30,7 +30,7 @@ const Section = styled.section`
 
 export default function MainPractice() {
 
-    const [current, setCurrent] = React.useState(1)
+    const [current, setCurrent] = React.useState(0)
     React.useEffect(() => {
       if (current === 13) setCurrent(1)
       document.querySelector(`#slide-${current > 12?1:current}`).scrollIntoView();
@@ -38,7 +38,7 @@ export default function MainPractice() {
   
     return(
       <Main>
-        <Section className="LearnSection">
+        <Section id="slide-0" className="LearnSection">
             <div className="introducao">
                 <h1>Treine seus conhecimentos</h1>
                 <P>
